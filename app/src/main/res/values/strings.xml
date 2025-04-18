@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">flowershopapp</string>
+    <string-array name="flower_types">
+        <item>Rose</item>
+        <item>Tulip</item>
+        <item>Sunflower</item>
+        <item>Lily</item>
+    </string-array>
+
+</resources>

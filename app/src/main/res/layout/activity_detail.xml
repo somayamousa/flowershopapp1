@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/detailImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Flower image" />
+
+    <TextView
+        android:id="@+id/detailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flower Name"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/detailPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: $0.00"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/detailQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity: 0"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/tealdarken"
+        android:text="Add to Cart" />
+
+    <Button
+        android:id="@+id/btnBackHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="@color/tealdarken"
+        android:text="Back to Home"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

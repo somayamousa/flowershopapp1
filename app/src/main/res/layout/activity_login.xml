@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/teal"
+    tools:context=".LoginActivity">
+
+    <!-- شعار التطبيق -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sogo"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp" />
+
+    <!-- العنوان الترحيبي -->
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Flower Shop"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- اسم المستخدم -->
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="User Name"
+        app:layout_constraintTop_toBottomOf="@id/txtWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- كلمة المرور -->
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        app:layout_constraintTop_toBottomOf="@id/edtName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- تذكّرني -->
+    <CheckBox
+        android:id="@+id/chk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/edtPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- زر تسجيل الدخول -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="@color/tealdarken"
+        app:layout_constraintTop_toBottomOf="@id/chk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
